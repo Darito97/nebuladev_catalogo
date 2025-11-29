@@ -51,5 +51,12 @@ if(footerBtn){
     openWhatsApp(DEFAULT_MSG);
   });
 }
+const mapBtn=document.getElementById("mapWhatsApp");
+if(mapBtn){
+  mapBtn.addEventListener("click",function(ev){
+    ev.preventDefault();
+    openWhatsApp(DEFAULT_MSG);
+  });
+}
 const y=document.getElementById("year");
 if(y){y.textContent=new Date().getFullYear();}
