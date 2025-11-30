@@ -78,7 +78,7 @@ body {
 .phone {
   color: var(--muted);
   font-weight: 600;
-  display: none;
+  display: block;
 }
 .btn {
   display: inline-flex;
@@ -138,7 +138,7 @@ body {
     grid-template-columns: 1fr;
   }
   .phone{
-    display: block;
+    display: none;
   }
 }
 .service-card {
