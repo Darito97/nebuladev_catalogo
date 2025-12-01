@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="assets/nebuladev_logo.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="site-header">
@@ -25,6 +26,15 @@
             <span class="brand-sub">Tecnología NebulaDev Motul</span>
           </div>
         </div>
+        <nav class="main-nav">
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li><a class="nav-link" href="#herramientas">Herramientas</a></li>
+            <li><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
         <div class="contact">
           <a class="btn btn-whatsapp" href="#" id="ctaWhatsApp"
             >Contactar por WhatsApp</a
@@ -35,16 +45,19 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1>Transformamos ideas en soluciones</h1>
-          <p class="subtitle">
-            Servicio confiable, amable, rápido y justo para personas y empresas.
-          </p>
+      <section id="inicio" class="hero">
+        <div class="stars"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title">Transformamos ideas en <span class="highlight">soluciones digitales</span></h1>
+          <p class="hero-subtitle">Desarrollo a la medida, accesible y confiable para personas y empresas.</p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar Proyecto</a>
+            <a href="#proyectos" class="btn">Ver Proyectos</a>
+          </div>
         </div>
       </section>
 
-      <section class="services">
+      <section id="servicios" class="services">
         <div class="container">
           <h2>Servicios</h2>
 
@@ -319,6 +332,98 @@
                 <span>Cotizar por WhatsApp</span>
               </button>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="herramientas" class="tools">
+        <div class="container">
+          <h2>Nuestras Herramientas</h2>
+          <p class="subtitle">
+            Tecnologías que usamos para crear soluciones robustas y escalables.
+          </p>
+          <div class="tools-grid">
+            <div class="tool-item"><i class="fab fa-angular"></i><span>Angular</span></div>
+            <div class="tool-item"><i class="fab fa-react"></i><span>React</span></div>
+            <div class="tool-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            <div class="tool-item"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="tool-item"><i class="fas fa-database"></i><span>SQL</span></div>
+            <div class="tool-item"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+            <div class="tool-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+            <div class="tool-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+            <div class="tool-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+            <div class="tool-item"><i class="fas fa-mobile-alt"></i><span>Flutter</span></div>
+            <div class="tool-item"><i class="fab fa-android"></i><span>Kotlin</span></div>
+            <div class="tool-item"><i class="fas fa-rocket"></i><span>Astro</span></div>
+            <div class="tool-item"><i class="fas fa-tasks"></i><span>SCRUM</span></div>
+            <div class="tool-item"><i class="fas fa-clipboard-list"></i><span>Notion</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="projects">
+        <div class="container">
+          <h2>Nuestros Proyectos</h2>
+          <p class="subtitle">Algunos ejemplos de nuestro trabajo.</p>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+              <div class="project-content">
+                <h3>E-Commerce Platform</h3>
+                <p>Plataforma de e-commerce con gestión de inventario y pagos.</p>
+                <div class="project-tech"><span class="tech-tag"><i class="fab fa-react"></i> React</span><span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span><span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span></div>
+                <a class="project-link" href="https://github.com/nebuladev/ecommerce-demo" target="_blank" rel="noopener"><i class="fab fa-github"></i> Ver Repositorio</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-icon"><i class="fas fa-tasks"></i></div>
+              <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>Aplicación de gestión de tareas con colaboración en tiempo real.</p>
+                <div class="project-tech"><span class="tech-tag"><i class="fab fa-angular"></i> Angular</span><span class="tech-tag"><i class="fab fa-python"></i> Python</span><span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span></div>
+                <a class="project-link" href="https://github.com/nebuladev/task-manager-demo" target="_blank" rel="noopener"><i class="fab fa-github"></i> Ver Repositorio</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-icon"><i class="fas fa-store"></i></div>
+              <div class="project-content">
+                <h3>Catálogo Libido</h3>
+                <p>Catálogo en línea de productos para adultos.</p>
+                <div class="project-tech">
+                  <span class="tech-tag"><i class="fab fa-html5"></i> HTML</span>
+                  <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="tech-tag"><i class="fas fa-rocket"></i> Astro</span>
+                  <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                  <span class="tech-tag"><i class="fas fa-database"></i> Supabase</span>
+                  <span class="tech-tag"><i class="fas fa-database"></i> SQL</span>
+                </div>
+                <a href="#" class="project-link adult-content-link" data-url="https://libido.vercel.app/">
+                  <i class="fas fa-external-link-alt"></i> Ver Proyecto
+                  <span class="adult-warning">⚠️ Contenido para adultos</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-section">
+        <div class="container">
+          <h2>¿Listo para comenzar tu proyecto?</h2>
+          <p class="subtitle">Contáctame para una cotización personalizada.</p>
+          <div class="contact-grid">
+            <div class="contact-items">
+              <div class="contact-item"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>nebula.developments.contact@gmail.com</p></div></div>
+              <div class="contact-item"><i class="fab fa-whatsapp"></i><div><h4>WhatsApp</h4><p>+52 443 108 3083</p></div></div>
+              <div class="contact-item"><i class="fas fa-rocket"></i><div><h4>Especialidades</h4><p>Desarrollo Web, Móvil y Cloud</p></div></div>
+              <div class="contact-item"><i class="fas fa-clock"></i><div><h4>Tiempo de Respuesta</h4><p>24 horas máximo</p></div></div>
+            </div>
+            <div class="contact-actions">
+              <a class="btn btn-outline" href="mailto:nebula.developments.contact@gmail.com?subject=Cotización de Proyecto&body=Hola NebulaDev,%0D%0A%0D%0AMe gustaría solicitar una cotización para mi proyecto.%0D%0A%0D%0ADetalles del proyecto:%0D%0A-%0D%0A-%0D%0A-%0D%0A%0D%0AGracias."><i class="fas fa-paper-plane"></i> Enviar Email</a>
+              <a class="btn btn-whatsapp" href="#" id="contactWhatsApp"><i class="fab fa-whatsapp"></i> Contactar por WhatsApp</a>
+              <small class="contact-note">Respuesta en menos de 24 horas</small>
+            </div>
           </div>
         </div>
       </section>

@@ -58,5 +58,23 @@ if(mapBtn){
     openWhatsApp(DEFAULT_MSG);
   });
 }
+const contactBtn=document.getElementById("contactWhatsApp");
+if(contactBtn){
+  contactBtn.addEventListener("click",function(ev){
+    ev.preventDefault();
+    openWhatsApp(DEFAULT_MSG);
+  });
+}
 const y=document.getElementById("year");
 if(y){y.textContent=new Date().getFullYear();}
+function showAdultContentWarning(ev,url){
+  if(ev){ev.preventDefault();}
+  const proceed=window.confirm('⚠️ El proyecto contiene contenido para adultos. ¿Deseas abrirlo?');
+  if(proceed){window.open(url,'_blank');}
+}
+document.querySelectorAll('.adult-content-link').forEach(a=>{
+  a.addEventListener('click',function(ev){
+    const url=ev.currentTarget.getAttribute('data-url');
+    showAdultContentWarning(ev,url);
+  });
+});
